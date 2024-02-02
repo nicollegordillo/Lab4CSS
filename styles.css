@@ -113,3 +113,22 @@ body {
   border-radius: 15% / 50%;
 }
   
+.face{
+  position: absolute;
+  top: 145px;
+  right:50px;
+  width:300px;
+  height: 200px;
+  background: yellow;
+  border-radius: 100px / 50px;
+}
+.face:after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 15% / 50%;
+}
