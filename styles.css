@@ -74,8 +74,8 @@ body {
 }
 .arml{
   position:absolute;
-  top: 120px;
-  left: 240px;
+  top: 130px;
+  left: 230px;
   width: 150px;
   height:60px;
   background: yellow;
@@ -94,8 +94,8 @@ body {
 }
 .armr{
   position:absolute;
-  top: 120px;
-  left:5px;
+  top: 130px;
+  left:15px;
   width: 150px;
   height:60px;
   background: yellow;
@@ -256,3 +256,30 @@ body {
   height: 70px;
   background: blue;
 }
+.eye1{
+  position: absolute;
+  top: 240px;
+  right: 270px;
+  width: 55px;
+  height: 55px;
+  background: red;
+  border-radius: 50%;
+}
+.eye2{
+  position: absolute;
+  top: 240px;
+  left: 270px;
+  width: 55px;
+  height: 55px;
+  background: red;
+  border-radius: 50%;
+} 
+.mouth{
+  position: absolute;
+  top: 310px;
+  right: 190px;
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+} 
