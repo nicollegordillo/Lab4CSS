@@ -283,3 +283,84 @@ body {
   background: red;
   border-radius: 50%;
 } 
+.ear1{
+  position:absolute;
+  top: -80px;
+  left: 210px;
+  width: 160px;
+  height:140px;
+  background: yellow;
+  transform: rotate(-80deg);
+  
+}
+.ear1:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: -20%;
+  left: 0%;
+  background: inherit;
+  border-radius: 20% / 50%;
+}
+.ear2{
+  position:absolute;
+  top: -80px;
+  right: 210px;
+  width: 160px;
+  height:140px;
+  background: yellow;
+  transform: rotate(-100deg);
+  
+}
+.ear2:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: -20%;
+  left: 0%;
+  background: inherit;
+  border-radius: 20% / 50%;
+}
+.inear1{
+  position:absolute;
+  top: -36px;
+  left: 225px;
+  width: 120px;
+  height:90px;
+  background: red;
+  transform: rotate(-80deg);
+  
+}
+.inear1:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: -20%;
+  left: 0%;
+  background: inherit;
+  border-radius: 20% / 50%;
+}
+.inear2{
+  position:absolute;
+  top: -36px;
+  right: 225px;
+  width: 120px;
+  height:90px;
+  background: red;
+  transform: rotate(-100deg);
+  
+}
+.inear2:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: -20%;
+  left: 0%;
+  background: inherit;
+  border-radius: 20% / 50%;
+}
+
