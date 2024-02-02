@@ -186,3 +186,73 @@ body {
   background: blue;
   border-radius: 50%;
 }
+.hair1{
+  position: absolute;
+  top: 170px;
+  right: 330px;
+  width: 80px;
+  height: 80px;
+  background: red;
+  border-radius: 50%;
+}
+.hair2{
+  position: absolute;
+  top: 170px;
+  left: 330px;
+  width: 80px;
+  height: 80px;
+  background: red;
+  border-radius: 50%;
+}
+.hair3{
+  position: absolute;
+  top: 140px;
+  right: 270px;
+  width: 90px;
+  height: 90px;
+  background: red;
+  border-radius: 50%;
+}
+.hair4{
+  position: absolute;
+  top: 140px;
+  left: 270px;
+  width: 90px;
+  height: 90px;
+  background: red;
+  border-radius: 50%;
+}
+.hair5{
+  position: absolute;
+  top: 130px;
+  right: 190px;
+  width: 90px;
+  height: 90px;
+  background: red;
+  border-radius: 50%;
+}
+.hair6{
+  position: absolute;
+  top: 130px;
+  left: 190px;
+  width: 90px;
+  height: 90px;
+  background: red;
+  border-radius: 50%;
+}  
+.square1{
+  position: absolute;
+  top: 200px;
+  left: 365px;
+  width: 40px;
+  height: 70px;
+  background: blue;
+}
+.square2{
+  position: absolute;
+  top: 200px;
+  right: 365px;
+  width: 40px;
+  height: 70px;
+  background: blue;
+}
