@@ -132,3 +132,57 @@ body {
   background: inherit;
   border-radius: 15% / 50%;
 }
+.circle1{
+  position: absolute;
+  top: 150px;
+  right: 330px;
+  width: 90px;
+  height: 90px;
+  background: blue;
+  border-radius: 50%;
+}
+.circle2{
+  position: absolute;
+  top: 150px;
+  left: 330px;
+  width: 90px;
+  height: 90px;
+  background: blue;
+  border-radius: 50%;
+}
+.circle3{
+  position: absolute;
+  top: 100px;
+  right: 270px;
+  width: 90px;
+  height: 90px;
+  background: blue;
+  border-radius: 50%;
+}
+.circle4{
+  position: absolute;
+  top: 100px;
+  left: 270px;
+  width: 90px;
+  height: 90px;
+  background: blue;
+  border-radius: 50%;
+}
+.circle5{
+  position: absolute;
+  top: 80px;
+  right: 190px;
+  width: 90px;
+  height: 90px;
+  background: blue;
+  border-radius: 50%;
+}
+.circle6{
+  position: absolute;
+  top: 80px;
+  left: 190px;
+  width: 90px;
+  height: 90px;
+  background: blue;
+  border-radius: 50%;
+}
