@@ -37,8 +37,8 @@ body {
 }
 .footl{
   position:absolute;
-  top: 500px;
-  left: 225px;
+  top: 420px;
+  left: 270px;
   width: 80px;
   height: 100px;
   background: blue;
@@ -46,8 +46,8 @@ body {
 }
 .footr{
   position:absolute;
-  top: 615px;
-  right: 225px;
+  top: 420px;
+  right: 270px;
   width: 80px;
   height: 100px;
   background: blue;
@@ -55,19 +55,19 @@ body {
 }
 .legl{
   position:absolute;
-  top: 615px;
-  left: 225px;
-  width: 85px;
-  height: 105px;
+  top: 415px;
+  left: 265px;
+  width: 90px;
+  height: 110px;
   background: yellow;
   border-radius: 70px / 50px;
 }
 .legr{
   position:absolute;
-  top: 615px;
-  right: 225px;
-  width: 85px;
-  height: 105px;
+  top: 415px;
+  right: 265px;
+  width: 90px;
+  height: 110px;
   background: yellow;
   border-radius: 70px / 50px;
 }
