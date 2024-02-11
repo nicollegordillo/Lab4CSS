@@ -1,108 +1,174 @@
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    
 }
 
 .art-container {
+  display:flex;
   position: relative;
 }
 
 .head {
-  width: 400px;
-  height: 350px;
-  background: blue;
-  border-radius: 160px / 70px;
+   display:flex;
+    transform: translate(-100px, 0px);
+    width: 400px;
+    height: 350px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-self: center;
+    background: #a2d2ff;
+    border-radius: 160px / 70px;
 }
+
 .head:before {
-  content: '';
-  position: absolute;
-  top: 10%;
-  bottom: 10%;
-  right: -5%;
-  left: -5%;
-  background: inherit;
-  border-radius: 11% / 50%;
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 11% / 50%;
 }
+
 .bod{
-  position:absolute;
-  top: 120px;
-  left: 50px;
-  border-bottom: 200px solid red;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  height: 0;
-  width: 200px;
+    display: flex;
+    transform: translate(360px, 250px);
+    border-bottom: 200px solid #A2C9FF;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 200px;
+    justify-content: center;
+    align-self: center;
+}
+
+.leg1{
+    transform: translate(-60px, 120px);
+}
+.leg2{
+    transform: translate(60px, 120px);
+}
+.leg1, .leg2{
+    display: flex;
+    width: 90px;
+    height: 110px;
+    background: #a2d2ff;
+    border-radius: 70px / 50px;
 }
 .footl{
-  position:absolute;
-  top: 420px;
-  left: 270px;
-  width: 80px;
-  height: 100px;
-  background: blue;
-  border-radius: 70px / 50px;
+  transform:translate(5px,0px);
+  background: #b7e4c7;
 }
 .footr{
-  position:absolute;
-  top: 420px;
-  right: 270px;
+  transform:translate(5px,0px);
+  background: #ffee99;
+}
+.footr, .footl{
   width: 80px;
   height: 100px;
-  background: blue;
   border-radius: 70px / 50px;
 }
-.legl{
-  position:absolute;
-  top: 415px;
-  left: 265px;
-  width: 90px;
-  height: 110px;
-  background: yellow;
-  border-radius: 70px / 50px;
+.leg2 > .footl, .leg1 > .footr{
+  align-self: center;
 }
-.legr{
-  position:absolute;
-  top: 415px;
-  right: 265px;
-  width: 90px;
-  height: 110px;
-  background: yellow;
-  border-radius: 70px / 50px;
+.button1{
+  transform:translate(185px,227px);
+}
+.button2{
+  transform:translate(136px,290px);
+}
+
+.button1, .button2{
+  width: 50px;
+  height: 50px;
+  background: #fcf3ea;
+  border-radius: 50px /50px;
+  align-self: center;
+  justify-content: center;
+}
+
+.ear1 {
+  transform: translate(170px, -175px) rotate(-80deg);
+}
+
+.ear2 {
+  transform: translate(-170px, -175px) rotate(-100deg);
+}
+
+.ear1,
+.ear2 {
+  display: flex;
+  width: 160px;
+  height: 140px;
+  background: #b4deff;
+  align-self: center;
+  justify-content: center;
+  position: relative; 
+}
+
+.ear2:after,
+.ear1:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: -20%;
+  left: 0%;
+  background: inherit;
+  border-radius: 20% / 50%;
+}
+
+.inear1 {
+  background: #ffee99;
+  transform: translate(-20px, 25px);
+  position: relative; 
+  z-index: 1; 
+}
+
+.inear2 {
+  background: #b7e4c7;
+  transform: translate(-20px, 25px);
+  position: relative; 
+  z-index: 1; 
+}
+
+.inear1,
+.inear2 {
+  width: 120px;
+  height: 90px;
+}
+.ear2 + .inear2, .ear1 + .inear1{
+  align-self: center;
+}
+.inear2:after, .inear1:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: -20%;
+  left: 0%;
+  background: inherit;
+  border-radius: 20% / 50%;
 }
 .arml{
-  position:absolute;
-  top: 130px;
-  left: 230px;
-  width: 150px;
-  height:60px;
-  background: yellow;
-  transform: rotate(40deg);
+  transform:translate(690px, 180px) rotate(35deg);
   
-}
-.arml:after {
-  content: '';
-  position: absolute;
-  top: -5%;
-  bottom: -5%;
-  right: -10%;
-  left: -10%;
-  background: inherit;
-  border-radius: 15% / 50%;
 }
 .armr{
-  position:absolute;
-  top: 130px;
-  left:15px;
-  width: 150px;
-  height:60px;
-  background: yellow;
-  transform: rotate(-40deg);
+  transform:translate(620px, 180px) rotate(-35deg);
   
 }
-.armr:after {
+.armr, .arml{
+  width: 150px;
+  height:60px;
+  background: #A2C1FF;
+  align-self: center;
+  justify-content: center;
+}
+.armr:after, .arml:after {
   content: '';
   position: absolute;
   top: -5%;
@@ -112,15 +178,16 @@ body {
   background: inherit;
   border-radius: 15% / 50%;
 }
-  
-.face{
-  position: absolute;
-  top: 145px;
-  right:50px;
+.face{  
+  display:flex;
+  transform: translate(-325px, -5px) rotate(100deg);
   width:300px;
   height: 200px;
-  background: yellow;
+  background: #FDF3AF;
   border-radius: 100px / 50px;
+  align-self: center;
+  justify-content: center;
+  
 }
 .face:after {
   content: '';
@@ -133,234 +200,101 @@ body {
   border-radius: 15% / 50%;
 }
 .circle1{
-  position: absolute;
-  top: 150px;
-  right: 330px;
-  width: 90px;
-  height: 90px;
-  background: blue;
-  border-radius: 50%;
+  transform:translate(-160px, -858px);
+  z-index: 2; 
 }
 .circle2{
-  position: absolute;
-  top: 150px;
-  left: 330px;
-  width: 90px;
-  height: 90px;
-  background: blue;
-  border-radius: 50%;
+  transform:translate(-220px, -608px);
+  z-index: 2; 
 }
 .circle3{
-  position: absolute;
-  top: 100px;
-  right: 270px;
-  width: 90px;
-  height: 90px;
-  background: blue;
-  border-radius: 50%;
+  transform:translate(-125px, -973px);
+  z-index: 2; 
 }
 .circle4{
-  position: absolute;
-  top: 100px;
-  left: 270px;
-  width: 90px;
-  height: 90px;
-  background: blue;
-  border-radius: 50%;
+  transform:translate(-160px, -843px);
+  z-index: 2; 
 }
 .circle5{
-  position: absolute;
-  top: 80px;
-  right: 190px;
-  width: 90px;
-  height: 90px;
-  background: blue;
-  border-radius: 50%;
+  transform:translate(-115px, -1083px);
+  z-index: 2; 
 }
 .circle6{
-  position: absolute;
-  top: 80px;
-  left: 190px;
+  transform:translate(-130px, -1098px);
+  z-index: 2; 
+}
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6{
+  display:flex;
   width: 90px;
   height: 90px;
-  background: blue;
+  background: #a2d2ff;
   border-radius: 50%;
+  align-self: center;
+  justify-content: center;
 }
 .hair1{
-  position: absolute;
-  top: 170px;
-  right: 330px;
-  width: 80px;
-  height: 80px;
-  background: red;
-  border-radius: 50%;
+  transform:translate(-170px, -310px);
+  
 }
 .hair2{
-  position: absolute;
-  top: 170px;
-  left: 330px;
-  width: 80px;
-  height: 80px;
-  background: red;
-  border-radius: 50%;
+  transform:translate(-225px, -80px);
 }
 .hair3{
-  position: absolute;
-  top: 140px;
-  right: 270px;
-  width: 90px;
-  height: 90px;
-  background: red;
-  border-radius: 50%;
+  transform:translate(-160px, -435px);
 }
 .hair4{
-  position: absolute;
-  top: 140px;
-  left: 270px;
-  width: 90px;
-  height: 90px;
-  background: red;
-  border-radius: 50%;
+  transform:translate(-200px, -300px);
 }
 .hair5{
-  position: absolute;
-  top: 130px;
-  right: 190px;
-  width: 90px;
-  height: 90px;
-  background: red;
-  border-radius: 50%;
+  transform:translate(-160px, -545px);
 }
 .hair6{
-  position: absolute;
-  top: 130px;
-  left: 190px;
-  width: 90px;
-  height: 90px;
-  background: red;
-  border-radius: 50%;
+  transform:translate(-175px, -555px);
 }  
 .square1{
-  position: absolute;
-  top: 200px;
-  left: 365px;
-  width: 40px;
-  height: 70px;
-  background: blue;
+  transform:translate(-158px, -1400px) rotate(100deg);
 }
 .square2{
-  position: absolute;
-  top: 200px;
-  right: 365px;
+  transform:translate(-220px, -1110px) rotate(100deg);
+}
+.square2, .square1{
   width: 40px;
   height: 70px;
-  background: blue;
+  background: #a2d2ff;
+  align-self: center;
+  justify-content: center;
+}
+.hair1, .hair2, .hair3, .hair4, .hair5, .hair6{
+  width: 90px;
+  height: 90px;
+  background: #01baef;
+  border-radius: 50%;
+  align-self: center;
+  justify-content: center;
+  z-index: 1;
 }
 .eye1{
-  position: absolute;
-  top: 240px;
-  right: 270px;
-  width: 55px;
-  height: 55px;
-  background: red;
-  border-radius: 50%;
+  transform:translate(-125px, 40px);
 }
 .eye2{
-  position: absolute;
-  top: 240px;
-  left: 270px;
-  width: 55px;
-  height: 55px;
-  background: red;
-  border-radius: 50%;
+  transform:translate(130px, 40px);
 } 
+.eye2, .eye1{
+  width: 45px;
+  height: 45px;
+  background: #d88e45;
+  border-radius: 50%;
+  align-self: center;
+  justify-content: center;
+  z-index: 1;
+}
 .mouth{
-  position: absolute;
-  top: 310px;
-  right: 190px;
+  transform:translate(-45px, 75px);
   width: 15px;
   height: 15px;
-  background: red;
+  background: #d88e45;
   border-radius: 50%;
+  align-self: center;
+  justify-content: center;
+  z-index: 1;
 } 
-.ear1{
-  position:absolute;
-  top: -80px;
-  left: 210px;
-  width: 160px;
-  height:140px;
-  background: yellow;
-  transform: rotate(-80deg);
-  
-}
-.ear1:after {
-  content: '';
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  right: -20%;
-  left: 0%;
-  background: inherit;
-  border-radius: 20% / 50%;
-}
-.ear2{
-  position:absolute;
-  top: -80px;
-  right: 210px;
-  width: 160px;
-  height:140px;
-  background: yellow;
-  transform: rotate(-100deg);
-  
-}
-.ear2:after {
-  content: '';
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  right: -20%;
-  left: 0%;
-  background: inherit;
-  border-radius: 20% / 50%;
-}
-.inear1{
-  position:absolute;
-  top: -36px;
-  left: 225px;
-  width: 120px;
-  height:90px;
-  background: red;
-  transform: rotate(-80deg);
-  
-}
-.inear1:after {
-  content: '';
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  right: -20%;
-  left: 0%;
-  background: inherit;
-  border-radius: 20% / 50%;
-}
-.inear2{
-  position:absolute;
-  top: -36px;
-  right: 225px;
-  width: 120px;
-  height:90px;
-  background: red;
-  transform: rotate(-100deg);
-  
-}
-.inear2:after {
-  content: '';
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  right: -20%;
-  left: 0%;
-  background: inherit;
-  border-radius: 20% / 50%;
-}
-
