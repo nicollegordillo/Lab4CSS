@@ -88,6 +88,7 @@ body {
   border-radius: 50px /50px;
   align-self: center;
   justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .ear1 {
@@ -139,7 +140,18 @@ body {
 .inear2 {
   width: 120px;
   height: 90px;
+  transition: background-color 0.3s ease;
 }
+
+.inear1:hover, .inear2:hover, .leg1 div:first-child:hover, .leg2 div:last-child:hover {
+    background-color: #ffc8dd; 
+}
+
+.inear1 > *:not(.eye1):not(.eye2):not(.mouth),
+.inear2 > *:not(.eye1):not(.eye2):not(.mouth) {
+    pointer-events: none; 
+}
+
 .ear2 + .inear2, .ear1 + .inear1{
   align-self: center;
 }
@@ -199,6 +211,7 @@ body {
   background: inherit;
   border-radius: 15% / 50%;
 }
+
 .circle1{
   transform:translate(-160px, -858px);
   z-index: 2; 
@@ -272,6 +285,7 @@ body {
   align-self: center;
   justify-content: center;
   z-index: 1;
+  transition: background-color 0.3s ease;
 }
 .eye1{
   transform:translate(-125px, 40px);
@@ -287,6 +301,7 @@ body {
   align-self: center;
   justify-content: center;
   z-index: 1;
+  transition: background-color 0.3s ease;
 }
 .mouth{
   transform:translate(-45px, 75px);
@@ -297,4 +312,15 @@ body {
   align-self: center;
   justify-content: center;
   z-index: 1;
+  transition: background-color 0.3s ease;
 } 
+
+.button1 + div:hover, .art-container div:nth-child(4):hover{
+  background-color: #e4c1f9; 
+}   
+.leg1 ~ .leg2:hover{
+  transform: translate(70px, 120px)rotate(40deg);
+}
+.leg1:hover{
+  transform: translate(-70px, 120px) rotate(-40deg);
+}
